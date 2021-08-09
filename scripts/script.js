@@ -14,5 +14,14 @@ var headerScrolled = () => {
   });
 }
 
+
+
+var subMenu = () => {
+  $('.btn-toogle').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+  });
+}
 // initialize the functions
 headerScrolled();
+subMenu();
