@@ -19,7 +19,8 @@ var headerScrolled = () => {
 var subMenu = () => {
   $('.btn-toogle').click(function(){
     $(this).toggleClass("click");
-    $('.sidebar').toggleClass("show");
+    // $('.sidebar').toggleClass("show");
+    $('body').toggleClass("show");
   });
 }
 // initialize the functions

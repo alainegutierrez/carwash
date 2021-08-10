@@ -16,9 +16,15 @@
 
 <body>
   <header class="header-main">
-    <div class="btn-toogle">
-      <span class="fas fa-bars"></span>
+    <div class="container">
+      <div class="row">
+        <div class="btn-toogle">
+          <span class="fas fa-bars"></span>
+        </div>
+      </div>
     </div>
+  </header>
+  <aside class="sidebar-holder">
     <nav class="sidebar">
       <div class="text">
           Side Menu
@@ -49,7 +55,10 @@
           <li><a href="#">Feedback</a></li>
       </ul>
     </nav>
-  </header>
+  </aside>
+  <div class="overlay">
+
+  </div>
   <main class="page-home">
     <section class="hero">
       <div class="content">
@@ -173,6 +182,87 @@
         </div>
       </div>
     </section>
+
+    <section class="wash-service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 left-side">
+            <div class="img-holder">
+              <img src="assets/images/image1-automatic.jpg" class="img-left border-circle">
+            </div>
+            <div class="desc">
+              <p>In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Et ultrices neque ornare aenean euismod elementum nisi quis. Faucibus et molestie ac feugiat sed lectus vestibulum. Potenti nullam ac tortor vitae purus faucibus. Et ultrices neque ornare aenean euismod.</p>
+              <a href="#"> LEARN MORE</a>
+            </div>
+          </div>
+          <div class="offset-lg-1 offset-md-1 col-lg-6 col-md-6 right-side">
+            <div class="right-content">
+              <h2 class="title">Automatic Car Wash Service</h2>
+              <p class="subtext">Image from 
+                <a href="#">Freepik</a>
+              </p>
+            </div>
+            <div class="right-img-holder">
+              <img src="assets/images/image2-automatic.jpg" class="border-circle">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="premium">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 left-content">
+            <h5 class="sm-text">ABOUT COMPANY</h5>
+            <h2 class="title"><span>Premium</span> Hand Car Wash & Detail</h2>
+            <p class="desc">In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Et ultrices neque ornare aenean euismod elementum nisi quis. Faucibus et molestie ac feugiat sed lectus vestibulum. Potenti nullam ac tortor vitae purus faucibus. Et ultrices neque ornare aenean euismod. Laoreet suspendisse...</p>
+            <p class="subtext">Image from 
+              <a href="#">Freepik</a>
+            </p>
+            <a href="#" class="lm">LEARN MORE</a>
+          </div>
+          <div class="col-lg-6 col-md-6 right-img ">
+            <div class="img-lg">
+              <img src="assets/images/image1-premium.jpg" class="border-circle">
+            </div>
+            <div class="img-md border-circle">
+              <img src="assets/images/image2-premium.jpg" class="border-circle">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 form-side p-0">
+            <form action="" class="contact-form">
+              <div class="form-floating mb-4 contact-list">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-floating mb-4 contact-list">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="form-floating mb-4 contact-list">
+                <input type="date" class="form-control"  required>
+              </div>
+              <div class="form-floating mb-4 contact-list">
+                <textarea name="" id=""  class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-6 text-side p-0">
+            <h1>Contact <br> US
+              <span></span>
+            </h1>
+         
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <section class="blog">
       <div class="bg-image lazyload" style="background-image: url(./assets/images/bg-blog.jpg);"></div>
       <div class="overlay"></div>
@@ -278,61 +368,8 @@
     </section> -->
   </main>
   <footer class="footer-main">
-    <div class="bg-text">
-      <span>simplicity</span>
-      <span>template</span>
-    </div>
-    <div class="container">
-      <div class="image-holder">
-        <img src="./assets/images/logo.png" class="footer-logo lazyload" alt="logo" />
-      </div>
-      <ul class="list-unstyled page-links">
-        <li>
-          <a href="#">Page 1</a>
-        </li>
-        <li>
-          <a href="#">Page 2</a>
-        </li>
-        <li>
-          <a href="#">Page 3</a>
-        </li>
-        <li>
-          <a href="#">Page 4</a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <p>&copy; Simplicity 2021.</p>
-        <ul class="list-unstyled copyright-links">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms &amp; Conditions</a>
-          </li>
-        </ul>
-        <ul class="list-unstyled social-links">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="row row-below">
+      <p class="text-below">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
     </div>
   </footer>
 

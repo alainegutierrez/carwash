@@ -6,13 +6,11 @@
 
 .footer-main {
   position: relative;
-  padding: 115px 0;
+  padding: 30px 0;
   overflow: hidden;
   font-size: 18px;
   color: #fff;
-  background: rgb(142,105,194);
-  background: linear-gradient(225deg, rgba(142,105,194,1) 0%, rgba(103,105,207,1) 50%, rgba(71,105,219,1) 100%);
-
+  background: #333333;
   .bg-text {
     position: absolute;
     top: initial;
@@ -205,6 +203,19 @@
       color: #fff;
       transform: scale(1);
       transition: .35s ease-in-out all;
+    }
+  }
+
+  
+  .row-below {
+    justify-content: center;
+
+    .text-below {
+      font-size: 14px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 20px;
+      color: $white;
     }
   }
 
