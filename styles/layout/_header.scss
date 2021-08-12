@@ -38,7 +38,7 @@ body.show {
     margin-left: auto;
     height: 45px;
     width: 45px;
-    background: green;
+    background: $crimson-red;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
@@ -248,14 +248,12 @@ body.show {
         line-height: 60px;
         border-bottom: 1px solid $mid-grey;
 
-
         a{
           text-decoration: none;
           color: $white;
           padding-left: 20px;
           display: block;
           width: fit-content;
-          border-left: 3px solid transparent;
           transition: ease-in-out all .3s;
           position: relative;
 
@@ -267,19 +265,43 @@ body.show {
           //   font-size: 22px;
           // }
 
+          &::before {
+            content: '';
+            width: 2px;
+            height: 100%;
+            left: 0;
+            background-color: transparent;
+            transition: ease-in-out all .3s;
+            position: absolute;
+
+          }
+
           &:hover {
-            border-left-color: $crimson-red;
+            &::before {
+              background-color: $crimson-red;
+            }
+          }
+        }
+
+        &:hover {
+          .sub-menu {
+            // height: js
+            transition: max-height ease-in-out .35s;
           }
         }
       }
 
       .sub-menu {
-        position: static;
-        display: none;
+        // position: static;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        transition: max-height ease-in-out .35s;
+
         li{
           line-height: 42px;
           border-bottom: none;
-
           font-size: 17px;
           padding-left: 40px;
         }
